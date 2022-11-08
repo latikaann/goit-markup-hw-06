@@ -638,9 +638,6 @@ section {
 }
 
 .footer-label {
-   display: flex;
-   align-items: flex-end;
-   gap: 12px;
    margin-left: 93px;
 }
 
@@ -649,22 +646,26 @@ section {
    justify-content: center;
    align-items: center;
    gap: 10px;
-   padding-top: 10px;
-   padding-bottom: 10px;
    width: 200px;
    height: 50px;
 
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-form {
+   display: flex;
+   align-items: center;
+}
+
 .footer-label input {
+   margin-right: 12px;
    padding-left: 16px;
    width: 358px;
    height: 50px;
    border: 1px solid rgba(255, 255, 255, 0.3);
    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
    border-radius: 4px;
-
+   color: var(--white-color);
    background-color: var(--dark-bg-color)
 }
 
@@ -843,8 +844,8 @@ section {
    transform: translate(-50%, -50%);
 
 
-   min-width: 528px;
-   min-height: 581px;
+   width: 528px;
+   height: 581px;
 
    background-color: var(--white-color);
 
@@ -919,12 +920,17 @@ section {
 
 .form-field {
    /* outline: 1px solid tomato; */
+  
+   font-size: 12px;
+   line-height: 1.16;
+   letter-spacing: 0.01em;
 
-   margin-bottom: 20px;
+   margin-bottom: 10px;
    
 }
 
 .label {
+
    position: relative;
    display: flex;
    flex-direction: column;
@@ -982,6 +988,7 @@ textarea:focus {
    align-items: center;
    justify-content: center;
    margin-bottom: 30px;
+   margin-top: 20px;
 
    /* outline: 2px solid green; */
 }
