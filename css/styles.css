@@ -883,12 +883,14 @@ section {
 
 }
 
+
 .form-button {
    display: block;
    padding: 10px 52px;
    min-width: 200px;
+   height: 50px;
    margin: auto;
-
+   
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -924,9 +926,14 @@ section {
    font-size: 12px;
    line-height: 1.16;
    letter-spacing: 0.01em;
-
    margin-bottom: 10px;
-   
+}
+
+.comment-field {
+   font-size: 12px;
+   line-height: 1.16;
+   letter-spacing: 0.01em;
+
 }
 
 .label {
